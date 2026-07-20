@@ -25,21 +25,49 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  margin-left: 20px;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 #welcome-section {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar {
   padding-right: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
-  height: 150px;
+  height: 100px;
   width: 100%;
-  background-color: aliceblue;
+  background: linear-gradient(-90deg, rgb(252, 254, 255) 0%, transparent 95%);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+}
+
+#project-section {
+  height: 80vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+#accounts-section {
+  height: 50vh;
+  width: 100%;
+}
+
+.blue-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(184, 209, 230);
 }
 
 @media screen {
