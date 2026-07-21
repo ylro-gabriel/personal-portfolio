@@ -64,6 +64,10 @@ h1 {
   width: 100%;
 }
 
+#profile-link img {
+  height: 50px;
+}
+
 .blue-box {
   height: 100%;
   width: 100%;
