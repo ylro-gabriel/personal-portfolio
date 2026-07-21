@@ -19,6 +19,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -32,6 +33,11 @@ h1 {
   width: 100%;
   display: flex;
   align-items: center;
+  font-size: 3rem;
+  animation-name: shiftFromLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
 }
 
 #welcome-section {
@@ -58,20 +64,52 @@ h1 {
   height: 80vh;
   width: 100%;
   background-color: aliceblue;
+  margin-bottom: 300px;
+  margin-left: 5px;
 }
 
 #accounts-section {
   height: 50vh;
   width: 100%;
-}
-
-#profile-link img {
-  height: 50px;
+  background-color: rgb(143, 143, 218);
+  color: rgb(252, 254, 255);
 }
 
 #project-section-title {
   padding: 20px;
   padding-left: 30px;
+  font-size: 2rem;
+}
+
+#accounts-section-title {
+  padding: 20px;
+  padding-left: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#gmail-icon {
+  border-radius: 17px;
+}
+
+#contacts-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+#welcome-section-title {
+  animation-name: showFromLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+#github-icon {
+  border-radius: 50%;
 }
 
 .blue-box {
@@ -116,6 +154,48 @@ h1 {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.account-icon {
+  height: 100px;
+}
+
+.account-icon:hover {
+  box-shadow: 0px 0px 5px 5px black;
+}
+
+.project-link {
+  font-size: 1.5rem;
+}
+
+.navbar-link {
+  font-size: 1.3rem;
+}
+
+.navbar-link:link {
+  color: rgb(143, 143, 218);
+}
+
+.navbar-link:hover {
+  transform: translateX(-10px);
+  color: #0e1454;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.project-screenshot:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+@keyframes showFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media screen {
